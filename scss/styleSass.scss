@@ -19,9 +19,8 @@ nav{
     width: 100%;
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
     color: white;
     border: 1px solid $border-dark;
 }
@@ -112,7 +111,7 @@ img{
         justify-content: center;
         align-items: center;
         background-color: darken($base-color, 15%);
-        color: white;
+        color: rgba(181, 6, 6, 0.884);
         padding: 10px 10px;
         gap: 10px;
         img{
@@ -129,6 +128,9 @@ img{
             display: flex;
             flex-direction: column;
             align-items: center;
+            border: 1px solid $border-dark;
+            background-color: antiquewhite;
+
             h4{
                 color:black
             }
@@ -144,5 +146,16 @@ footer{
         height: 40px;
         object-fit: cover;
         margin: 5px 5px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	header{
+        font-size: 0.7;
+    }
+}
+@media only screen and (min-width: 768px) {
+	header{
+        font-size: 1.5rem;
     }
 }
